@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <title>Frontend</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            min-height: 100%;
+        }
+        .centered_loader{
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-29px;
+            margin-left:-29px;
+        }
+    </style>
+</head>
+<body>
+<app-root>
+    <div class="centered_loader">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-root>
+</body>
+
+</html>

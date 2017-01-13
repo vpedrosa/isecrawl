@@ -1,0 +1,12 @@
+.home-box{
+    margin-top:10%;
+}
+
+ul{
+    list-style: none;
+}
+
+ul a {
+    color: #9e9e9e !important;
+    text-decoration: underline;
+}
