@@ -9,6 +9,7 @@ import {HomeComponent} from './home/home.component';
 import { ShowComponent } from './show/show.component';
 import { ListComponent } from './list/list.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MaterializeModule } from 'angular2-materialize';
 
 const appRoutes: Routes = [
     {path: '', component: HomeComponent},

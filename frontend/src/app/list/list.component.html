@@ -1,3 +1,39 @@
-<p>
-  list works!
-</p>
+<div class="row">
+    <div class="col s12">
+        <h1 class="raleway-light grey-text darken-4">Lista de servidores analizados</h1>
+    </div>
+
+    <div class="col s12">
+        <p class="flow-text">Esta es la lista de servidores analizados, en total he analizado
+            <strong>{{analized}}</strong> IPs, de las cuales <strong>{{valid_servers}}</strong> eran servidores reales y
+            he encontrado <strong class="red-text">{{vulnerabilities_found}}</strong> vulnerabilidades.
+        </p>
+    </div>
+
+    <div class="col s12">
+        <table class="striped">
+            <thead>
+            <tr>
+                <th>IP</th>
+                <th>Vulnerabilidad en</th>
+                <th>Versión afectada</th>
+                <th class="right-align">Severidad</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col s12 center-align">
+        <ul class="pagination">
+            <li [ngClass]="{'disabled':!may_show_first_arrow}"><a><i class="material-icons">chevron_left</i></a></li>
+            <li *ngFor="let page_link of page_links; let i=index" [routerLink]="page_link"
+                routerLinkActive="active teal"><a>{{index}}</a>
+            </li>
+            <li [ngClass]="{'disabled':!may_show_last_arrow}" class="waves-effect"><a><i class="material-icons">chevron_right</i></a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -11,3 +11,7 @@ main {
 #nav-mobile li{
     text-transform: uppercase;
 }
+
+.container{
+    padding-top:2vh;
+}
